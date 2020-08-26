@@ -3,7 +3,8 @@ import {
   createRouter
 } from 'vue-router'
 
-import Home from '../components/Home.vue'
+import Home from '../views/Home.vue'
+import Doc from '../views/Doc.vue'
 
 const history = createWebHashHistory()
 
@@ -13,6 +14,10 @@ const router = createRouter({
     {
       path: '/',
       component: Home
+    },
+    {
+      path: '/doc',
+      component: Doc
     }
   ]
 })
